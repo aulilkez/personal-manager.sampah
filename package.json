@@ -1,7 +1,19 @@
 {
-  "name": "personal-manager",
+  "name": "Personal Manager",
   "version": "1.0.0",
+  "private": true,
   "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "reset-project": "node ./scripts/reset-project.js",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "ultracite check",
+    "check": "ultracite check",
+    "fix": "ultracite fix",
+    "prepare": "husky"
+  },
   "dependencies": {
     "@expo/ui": "~58.0.29",
     "expo": "~58.0.26",
@@ -29,15 +41,12 @@
   },
   "devDependencies": {
     "@types/react": "~19.3.0",
-    "typescript": "~6.0.3"
-  },
-  "scripts": {
-    "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "lint": "expo lint"
-  },
-  "private": true
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.2",
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0",
+    "oxlint-plugin-react-doctor": "^0.9.23",
+    "typescript": "~6.0.3",
+    "ultracite": "8.3.1"
+  }
 }
