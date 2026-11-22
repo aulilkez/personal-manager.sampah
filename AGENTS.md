@@ -13,11 +13,12 @@ Expo ships breaking changes every SDK release. APIs you remember are likely rena
 Use `bunx` instead of `npx` if the project uses bun (`bun.lock` present).
 
 ```bash
-npx expo install <package>  # ALWAYS use instead of npm/yarn/pnpm/bun add — resolves SDK-compatible versions
-npx expo start              # start the dev server
-npx expo lint               # lint
-npx tsc --noEmit            # typecheck
-npx expo-doctor             # diagnose dependency and config issues
+bunx expo install <package> # resolves SDK-compatible versions
+bun run start               # start the dev server
+bun run lint                # Oxlint
+bun run typecheck           # TypeScript typecheck
+bun run doctor              # diagnose dependency and config issues
+bun run doctor:fix          # repair incompatible Expo dependencies
 npx expo install --fix      # fix incompatible package versions
 ```
 

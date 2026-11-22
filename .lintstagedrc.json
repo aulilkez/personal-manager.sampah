@@ -1,5 +1,4 @@
 {
-  "*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,json,jsonc,css,scss,less,vue,svelte,astro,html,md,mdx,yaml,yml,graphql,gql}": [
-    "bunx ultracite fix"
-  ]
+  "*.{js,jsx,ts,tsx,mjs,cjs,mts,cts}": ["bunx oxfmt", "bunx oxlint --config oxlint.config.mts"],
+  "*.{json,jsonc,css,md,mdx}": "bunx oxfmt"
 }
